@@ -37,9 +37,6 @@ let max = 100;
 let nombreMystere = Math.floor(Math.random() * max) + min;
 let tentative = 0;
 
-function reroll() {
-    nombreMystere = Math.floor(Math.random() * max) + min;}
-
 const annonce = document.getElementById("annonce");
 const entrer = document.getElementById("entrer");
 const input = document.getElementById("input");
@@ -58,7 +55,7 @@ entrer.addEventListener("click",function(){
 
     ++tentative
 
-    alert(nombreMystere)
+    // alert(nombreMystere)
     if (isNaN(tonchoix)) {
         annonce.textContent="Devinette de >>>NOMBRE<<<"
         indice.textContent="Trop nul"
@@ -77,7 +74,7 @@ entrer.addEventListener("click",function(){
         indice.textContent="Trop fort"
         nombreMystere = Math.floor(Math.random() * max) + min;
         tentative=0
-        alert(nombreMystere)
+        // alert(nombreMystere)
     }
         essais.textContent = tentative
 });
