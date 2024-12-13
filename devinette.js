@@ -38,8 +38,14 @@ const nombreMystere = Math.floor(Math.random() * max) + min; // Nombre entre 1 e
 let tentative = 0;
 let deviner = false;
 
+
+
 const annonce = document.getElementById("annonce");
-const entrer = document.getElementById("enter");
+const entrer = document.getElementById("entrer");
 const input = document.getElementById("input");
 
 annonce.innerHTML="Bienvenue au jeu de devinette de nombre !"
+
+input.value=""
+
+
